@@ -1,0 +1,120 @@
+.purchase-stages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__title {
+        margin-bottom: 65px;
+    }
+}
+
+.stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stage-item {
+    max-width: 300px;
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid #EEEDDE;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #203239;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            background-color: $main-color;
+            width: 8px;
+            border-radius: 5px;
+            left: -27px;
+        }
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FF7527;
+    }
+
+    &__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        border: none;
+        background-color: transparent;
+        padding: 10px 6px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #203239;
+
+        &::before {
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+            left: 0;
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            background-color: #D6D5C7;
+        }
+
+        &:hover {
+
+            &::before {
+                width: 80%;
+            }
+        }
+    }
+
+    &__arrow-right {
+        margin-left: 15px;
+    }
+}
+
+@media(max-width:991px) {
+    .purchase-stages {
+        &__title {
+            margin: 0 auto 64px auto;
+            text-align: center;
+        }
+    }
+
+    .stages {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+}
+
+@media(max-width:768px) {
+    .stages {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:575px) {
+    .stage-item {
+        border: 1px solid #EEEDDE;
+    }
+}

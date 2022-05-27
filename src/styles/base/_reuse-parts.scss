@@ -1,0 +1,54 @@
+.bg-color {
+    background-color: #EEEDDE;
+}
+
+.lg-text {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 84px;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(32, 50, 57, 0.55);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #203239;
+    max-width: 535px;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 13px 41px;
+
+    &--bg-color-black {
+        background-color: #203239;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:hover {
+            background-color: #3c5e6b;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .lg-text {
+        line-height: 50px;
+    }
+
+    .title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+}

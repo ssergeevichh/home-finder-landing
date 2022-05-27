@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="bg-color">
+      <header id="header" class="header container">
+        <a class="hamburger" href="#menu">
+          <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path
+              d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+          </svg>
+        </a>
+        <a href="#">
+          <img class="header__logo" src="/icons/logo.png" alt="">
+        </a>
+        <nav class="navigation-menu" id="menu">
+          <a class="navigation-menu__item" href="#">Home</a>
+          <a class="navigation-menu__item" href="#">About</a>
+          <a class="navigation-menu__item" href="#">Properties</a>
+          <a class="navigation-menu__item" href="#">Contact</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="content">
+      <div class="bg-color">
+        <section class="promo container">
+          <div class="promo-left">
+            <h1 class="promo__title lg-text">Temukan Hunian Keluarga Sesi Keinginanmu</h1>
+            <div class="desc promo-left__desc">
+              Menyediakan hunian bagi keluarga anda dengan varian pilihan dan lokasi yang strategis di kota anda dengan
+              cara
+              yang lebih mudah.
+            </div>
+            <form id="search-data-form" action="#" class="search-form promo-left__form">
+              <img src="/icons/location.png" class="search-form__location">
+              <input name="search" required type="text" placeholder="Search location, properties, residental group"
+                class="search-form__search-input">
+              <button class="btn search-form__btn btn--bg-color-black">Search</button>
+            </form>
+            <div class="promo-statistics">
+              <div class="statistics-item">
+                <div class="statistics-item__quantity lg-text">
+                  <div>200</div>
+                  <span class="statistics-item__symbol">+</span>
+                </div>
+                <div class="desc">Residental grup telah bergabung</div>
+              </div>
+              <div class="statistics-item">
+                <div class="statistics-item__quantity lg-text">
+                  <div>10</div>
+                  <span class="statistics-item__symbol">Tahun</span>
+                </div>
+                <div class="desc">Sudah berpengalaman</div>
+              </div>
+              <div class="statistics-item">
+                <div class="statistics-item__quantity lg-text">
+                  <div>999</div>
+                  <span class="statistics-item__symbol">+</span>
+                </div>
+                <div class="desc">Properti tersedia di berbagai Kota</div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-right">
+            <img class="promo-right__img" src="imgs/first-screen-house.png" alt="">
+          </div>
+        </section>
+      </div>
+
+      <section class="purchase-stages container">
+        <div class="title purchase-stages__title">Tahapan Pembelian Properti yang Mudah dan Cepat</div>
+        <div class="stages">
+
+          <div class="stage-item">
+            <div class="stage-item__title">Pilih Properti 
+              <span class="stage-item__number">01</span>
+            </div>
+            <div class="desc">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih
+              properti yang bijak dapat anda baca lebih lanjut di sini
+            </div>
+            <button class="stage-item__btn">Baca lebih Lanjut
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="stage-item__arrow-right bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-item__title">Proses Booking 
+              <span class="stage-item__number">02</span>
+            </div>
+            <div class="desc">Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan unit properti tertentu.
+            </div>
+            <button class="stage-item__btn">Baca lebih Lanjut
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="stage-item__arrow-right bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-item__title">KPR dan Sertifikasi 
+              <span class="stage-item__number">03</span>
+            </div>
+            <div class="desc">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih
+              properti yang bijak dapat anda baca lebih lanjut di sini
+            </div>
+            <button class="stage-item__btn">Baca lebih Lanjut
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="stage-item__arrow-right bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
