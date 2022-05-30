@@ -1,7 +1,6 @@
 export default function outputFormData(formSelector) {
-    const form = document.querySelector(formSelector);
-    form.addEventListener('submit', (e) => {
+    $(formSelector).on('submit', function (e) {
         e.preventDefault();
-        console.log(form.elements.search.value);
-    })
+        console.log($(this).find('input[name="search"]').val());
+    });
 }

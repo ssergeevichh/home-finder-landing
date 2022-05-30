@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import '../../node_modules/bootstrap/dist/css/bootstrap-reboot.css';
 
+
 @import './base/variables.scss';
 @import './base/reuse-parts';
 
@@ -14,8 +15,11 @@ input {
   line-height: 24px;
   color: rgba(32, 50, 57, 0.55);
   border-radius: 15px;
-  border: none;
+  border: 1px solid $main-color;
+}
 
+li {
+  list-style-type: none;
 }
 
 .container {
@@ -28,3 +32,7 @@ input {
 @import './parts/header';
 @import './parts/promo';
 @import './parts/purchasing';
+@import './parts/offer';
+@import './parts/apartments';
+@import './parts/info';
+@import './parts/footer';

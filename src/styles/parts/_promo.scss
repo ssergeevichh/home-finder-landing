@@ -1,6 +1,5 @@
 @import 'mmenu-js/dist/mmenu.css';
 
-
 .promo {
     display: flex;
     padding-top: 40px;
@@ -12,9 +11,6 @@
     }
 }
 
-.hamburger {
-    display: none;
-}
 
 .promo-left {
     &__desc {
@@ -32,6 +28,7 @@
 
     &__search-input {
         min-width: 88.5%;
+        border: none;
         padding: 21px 175px 21px 56px;
     }
 
@@ -67,16 +64,12 @@
     &__symbol {
         font-weight: 700;
         color: $main-color;
-    }
 
-    &:nth-child(even) {
-        .statistics-item {
-            &__symbol {
-                font-size: 16px;
-                height: 0;
-            }
+        &__word {
+            color: $main-color;
+            font-size: 16px;
+            height: 0;
         }
-
     }
 }
 
@@ -148,7 +141,7 @@
     }
 }
 
-@media(max-width:575px) {
+@media(max-width:576px) {
     .promo {
         &__title {
             font-size: 28px;
@@ -157,12 +150,6 @@
 
     .header {
         padding-top: 30px;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 15px;
     }
 
     .promo-statistics {

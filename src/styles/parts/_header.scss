@@ -5,6 +5,10 @@
     padding-top: 50px;
 }
 
+.hamburger {
+    display: none;
+}
+
 .navigation-menu {
     display: flex;
     justify-content: space-between;
@@ -41,7 +45,7 @@
     }
 }
 
-@media(max-width:575px) {
+@media(max-width:576px) {
     .navigation-menu {
         align-items: center;
         justify-content: space-around;
@@ -61,6 +65,12 @@
                 }
             }
         }
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 15px;
     }
 
     // mmenu

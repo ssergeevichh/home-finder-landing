@@ -10,6 +10,7 @@
 .stages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .stage-item {
@@ -101,7 +102,6 @@
 
     .stages {
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
         row-gap: 20px;
     }
 
