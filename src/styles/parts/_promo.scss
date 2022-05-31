@@ -37,6 +37,7 @@
         transform: translateY(-50%);
         top: 50%;
         left: 24px;
+        font-size: 20px;
     }
 
     &__btn {
@@ -50,7 +51,7 @@
 
 .promo-statistics {
     display: flex;
-    gap: 72px;
+    gap: 68px;
 }
 
 .statistics-item {
@@ -64,41 +65,27 @@
     &__symbol {
         font-weight: 700;
         color: $main-color;
+    }
 
-        &__word {
-            color: $main-color;
-            font-size: 16px;
-            height: 0;
-        }
+    &__symbol-word {
+        color: $main-color;
+        font-size: 16px;
+        height: 0;
     }
 }
 
 @media(max-width:1200px) {
     .promo {
-        text-align: center;
+        align-items: center;
+
+        &__title {
+            font-size: 40px;
+        }
     }
 
     .promo-right {
         &__img {
-            display: none;
-        }
-    }
-
-    .promo-left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .search-form {
-        width: 70%;
-
-        &__search-input {
-            min-width: 100%;
-        }
-
-        &__btn {
-            right: 20px;
+            width: 100%;
         }
     }
 }
@@ -107,54 +94,65 @@
     .promo {
         &__title {
             margin-top: 20px;
-            font-size: 53px;
+            font-size: 30px;
+        }
+    }
+
+    .promo-left {
+        max-width: 65%;
+    }
+
+    .promo-statistics {
+        gap: 30px;
+    }
+
+    .search-form {
+        &__search-input {
+            padding: 21px 160px 21px 56px;
+        }
+
+        &__btn {
+            right: 56px;
         }
     }
 }
 
 @media(max-width: 768px) {
-    .promo {
-        &__title {
-            font-size: 39px;
-            font-weight: 700;
+    .promo-right {
+        &__img {
+            display: none;
+        }
+    }
+
+    .promo-left {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-form {
+        &__btn {
+            right: 10px;
         }
     }
 
     .promo-statistics {
-        gap: 50px;
-    }
-
-    .search-form {
-        width: 90%;
-
-        &__search-input {
-            padding: 21px 175px 21px 40px;
-        }
-
-        &__btn {
-            right: 10px;
-        }
-
-        &__location {
-            left: 15px;
-        }
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
     }
 }
 
 @media(max-width:576px) {
+    .promo-left {
+        text-align: center;
+    }
+
     .promo {
         &__title {
             font-size: 28px;
         }
-    }
-
-    .header {
-        padding-top: 30px;
-    }
-
-    .promo-statistics {
-        flex-direction: column;
-        gap: 30px;
     }
 
     .search-form {
@@ -172,6 +170,21 @@
 
         &__location {
             top: 20%;
+            left: 40px;
+        }
+    }
+
+    .promo-statistics {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width:400px) {
+    .search-form {
+        &__location {
+            left: 25px;
         }
     }
 }

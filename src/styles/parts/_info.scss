@@ -36,10 +36,15 @@
 
     &__icon {
         margin-right: 20px;
+        font-size: 30px;
+    }
+    &__text {
+        text-align: left;
     }
 
     &__btn {
         margin-top: 25px;
+        min-width: 195px;
     }
 }
 

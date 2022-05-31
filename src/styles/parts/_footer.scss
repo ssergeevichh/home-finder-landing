@@ -19,6 +19,11 @@
             transform: scale(1.2);
         }
     }
+
+    &__icon {
+        font-size: 19px;
+        color: #EEEDDE
+    }
 }
 
 @media (max-width: 575px) {

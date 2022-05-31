@@ -18,13 +18,16 @@
     padding: 20px 26px;
     display: flex;
     flex-direction: column;
-    min-height: 300px;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     border: 1px solid transparent;
 
     &:hover {
         border: 1px solid #EEEDDE;
+    }
+
+    &__desc {
+        margin-bottom: 50px;
     }
 
     &__title {
@@ -92,6 +95,26 @@
     }
 }
 
+@media(max-width:768px) {
+    .stages {
+        column-gap: 20px;
+    }
+    
+    .stage-item {
+        padding: 20px;
+
+        &__desc {
+            font-size: 13px;
+        }
+
+        &__title {
+            &::before {
+                left: -21px;
+            }
+        }
+    }
+}
+
 @media(max-width:991px) {
     .purchase-stages {
         &__title {
@@ -107,14 +130,12 @@
 
 }
 
-@media(max-width:768px) {
-    .stages {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 @media(max-width:575px) {
     .stage-item {
         border: 1px solid #EEEDDE;
+    }
+
+    .stages {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

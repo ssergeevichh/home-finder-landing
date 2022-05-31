@@ -3,7 +3,7 @@ import '../styles/main.scss';
 import createMobileMenu from './header/m-menu';
 import outputFormData from './header/form-consoling';
 import initModal from './modal-form/init-modal';
-import '../../node_modules/@splidejs/splide/dist/js/splide.js';
+import Splide from '@splidejs/splide';
 
 createMobileMenu('#menu');
 outputFormData('#search-data-form')
