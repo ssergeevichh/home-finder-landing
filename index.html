@@ -59,7 +59,7 @@
         <section class="promo container">
           <div class="promo-left">
             <h1 class="promo__title lg-text">Temukan Hunian Keluarga Sesi Keinginanmu</h1>
-            <div class="desc promo-left__desc">
+            <div class="promo-left__desc">
               Menyediakan hunian bagi keluarga anda dengan varian pilihan dan lokasi yang strategis di kota anda dengan
               cara
               yang lebih mudah.
@@ -76,21 +76,21 @@
                   <div>200</div>
                   <span class="statistics-item__symbol">+</span>
                 </div>
-                <div class="desc">Residental grup telah bergabung</div>
+                <div>Residental grup telah bergabung</div>
               </div>
               <div class="statistics-item">
                 <div class="statistics-item__quantity lg-text">
                   <div>10</div>
                   <span class="statistics-item__symbol-word">Tahun</span>
                 </div>
-                <div class="desc">Sudah berpengalaman</div>
+                <div>Sudah berpengalaman</div>
               </div>
               <div class="statistics-item">
                 <div class="statistics-item__quantity lg-text">
                   <div>999</div>
                   <span class="statistics-item__symbol">+</span>
                 </div>
-                <div class="desc">Properti tersedia di berbagai Kota</div>
+                <div>Properti tersedia di berbagai Kota</div>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@
             <div class="stage-item__title">Pilih Properti
               <span class="stage-item__number">01</span>
             </div>
-            <div class="desc stage-item__desc">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga.
+            <div class="stage-item__desc">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga.
               Cara memilih
               properti yang bijak dapat anda baca lebih lanjut di sini
             </div>
@@ -121,7 +121,7 @@
             <div class="stage-item__title">Proses Booking
               <span class="stage-item__number">02</span>
             </div>
-            <div class="desc stage-item__desc">Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan unit
+            <div class="stage-item__desc">Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan unit
               properti tertentu.
             </div>
             <button class="stage-item__btn">Baca lebih Lanjut
@@ -133,7 +133,7 @@
             <div class="stage-item__title">KPR dan Sertifikasi
               <span class="stage-item__number">03</span>
             </div>
-            <div class="desc stage-item__desc">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga.
+            <div class="stage-item__desc">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga.
               Cara memilih
               properti yang bijak dapat anda baca lebih lanjut di sini
             </div>
@@ -156,7 +156,7 @@
             </div>
             <div class="offer-desc">
               <div class="title offer-desc__title">Bangunan yang dirancang oleh Aristektur Handal</div>
-              <div class="desc desc--color-black offer-desc__description">Tanpa diragukan, properti yang disediakan
+              <div class="offer-desc__description">Tanpa diragukan, properti yang disediakan
                 dalam webiste kami merupakan
                 hasil kerjasama secara profesional dengan para Arsitektur ternama dan Developer yang terpercaya.
               </div>
@@ -169,21 +169,28 @@
               </div>
             </div>
           </div>
-          <form action="#" id="calling-form" class="calling-form modal">
+          <form action="#" id="calling-form" class="bg-color-milk calling-form modal">
             <div class="title calling-form__title">Booking a call</div>
             <hr>
             <div class="fields-wrapper">
               <label for="name">Name</label>
-              <input class="fields-wrapper__input" id="name" type="text">
+              <input required name="name" class="fields-wrapper__input" id="name" type="text">
 
               <label for="email">Email</label>
-              <input class="fields-wrapper__input" id="email" type="email">
+              <input required name="email" class="fields-wrapper__input" id="email" type="email">
 
               <label for="phone">Phone</label>
-              <input class="fields-wrapper__input" id="phone" type="tel">
+              <input required name="phone" class="fields-wrapper__input" id="phone" type="tel">
 
             </div>
             <button class="btn calling-form__btn btn--type-black">BOOK</button>
+
+            <div class="preload">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
 
           </form>
         </section>
@@ -230,33 +237,6 @@
             </ul>
           </div>
         </div>
-        <ul class="mobile-apartment-slider">
-          <li class="apartment-item">
-            <img src="/imgs/slider/slide1.jpg" alt="" class="apartment-item__img">
-            <div class="apartment-item__title">Magnolia Surabaya</div>
-            <div class="desc desc--color-black">Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec. Jatiuwung,
-              Kota Tangerang, Banten 15136
-            </div>
-          </li>
-          <li class="apartment-item">
-            <img src="/imgs/slider/slide2.jpg" alt="" class="apartment-item__img">
-            <div class="apartment-item__title">Pinang Residences</div>
-            <div class="desc desc--color-black">Jl. Deplu Raya No.16 RT.5, RW.003
-              Bintaro, Pesanggrahan, Jakarta Selatan 12330</div>
-          </li>
-          <li class="apartment-item">
-            <img src="/imgs/slider/slide3.jpg" alt="" class="apartment-item__img">
-            <div class="apartment-item__title">South Grove</div>
-            <div class="desc desc--color-black">1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan,
-              Daerah Khusus Ibukota Jakarta 12440</div>
-          </li>
-          <li class="apartment-item">
-            <img src="/imgs/slider/slide3.jpg" alt="" class="apartment-item__img">
-            <div class="apartment-item__title">South Grove</div>
-            <div class="desc desc--color-black">1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan,
-              Daerah Khusus Ibukota Jakarta 12440</div>
-          </li>
-        </ul>
       </section>
 
       <div class="bg-color-milk">
