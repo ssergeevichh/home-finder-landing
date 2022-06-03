@@ -11,6 +11,7 @@
 }
 
 .drop-menu {
+    color: $dark-green;
     &__list-mobile {
         display: none;
     }
@@ -25,17 +26,15 @@
         transition: all 0.3s ease-in-out;
         flex-direction: column;
         white-space: nowrap;
-        padding: 10px;
         background-color: #fff;
+        padding: 0;
         border-radius: 15px;
         z-index: 2;
         margin: 0;
 
-        li {
-            padding: 5px 10px;
-        }
-
         a {
+            display: block;
+            padding: 5px 10px;
             font-weight: 300;
 
             &:hover {
@@ -88,12 +87,6 @@
 
             &::after {
                 width: 30%;
-            }
-
-            .navigation-menu {
-                &__item-icon {
-                    top: 60%;
-                }
             }
         }
     }

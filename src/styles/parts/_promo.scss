@@ -4,9 +4,11 @@
     display: flex;
     padding-top: 40px;
     padding-bottom: 60px;
+    gap: 20px;
 
     &__title {
         margin-top: 65px;
+        color: $dark-green;
         margin-bottom: 24px;
     }
 }
@@ -33,10 +35,11 @@
     }
 
     &__location {
+        color: $dark-green;
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
-        left: 24px;
+        left: 4%;
         font-size: 20px;
     }
 
@@ -44,13 +47,14 @@
         position: absolute;
         box-shadow: 0px 6px 8px rgba(32, 50, 57, 0.25);
         transform: translateY(-50%);
-        right: 100px;
+        right: 13%;
         top: 50%;
     }
 }
 
 .promo-statistics {
     display: flex;
+    flex-wrap: wrap;
     gap: 68px;
 }
 
@@ -58,6 +62,7 @@
     max-width: 149px;
 
     &__quantity {
+        color: $dark-green;
         display: flex;
         align-items: baseline;
     }
@@ -110,14 +115,24 @@
         &__search-input {
             padding: 21px 160px 21px 56px;
         }
+    }
+}
 
+@media(max-width: 780px) {
+    .search-form {
         &__btn {
-            right: 56px;
+            right: 11%;
         }
     }
 }
 
 @media(max-width: 768px) {
+    .promo {
+        &__title {
+            text-align: center;
+        }
+    }
+
     .promo-right {
         &__img {
             display: none;
@@ -129,17 +144,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     .search-form {
         &__btn {
-            right: 10px;
+            right: 3%;
         }
     }
 
     .promo-statistics {
         width: 100%;
-        gap: 0;
         justify-content: space-between;
     }
 }
@@ -170,21 +185,35 @@
 
         &__location {
             top: 20%;
-            left: 40px;
+            left: 8%;
         }
     }
 
     .promo-statistics {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .statistics-item {
+        max-width: 140px;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+
+        &__quantity {
+            font-size: 38px;
+        }
     }
 }
 
-@media(max-width:400px) {
-    .search-form {
-        &__location {
-            left: 25px;
-        }
+@media(max-width: 500px) {
+    .promo-statistics {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width:340px) {
+    .promo-statistics {
+        justify-content: center;
     }
 }

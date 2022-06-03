@@ -32,12 +32,15 @@
     &__info {
         display: flex;
         align-items: center;
+        color: $dark-green;
+        font-weight: 400;
     }
 
     &__icon {
         margin-right: 20px;
         font-size: 30px;
     }
+
     &__text {
         text-align: left;
     }
@@ -57,6 +60,7 @@
 .partners-icons {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 
     &__img {
         object-fit: contain;
@@ -65,32 +69,43 @@
 
 @media(max-width: 1200px) {
     .info {
-        flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .info-details {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
+}
 
+@media(max-width:1100px) {
     .info-items {
-        gap: 100px;
-    }
-
-    .partners {
-        &__title {
-            margin-top: 45px;
-        }
+        flex-direction: column;
+        gap: 20px
     }
 }
 
 @media(max-width:768px) {
-    .info-items {
-        gap: 10px;
+    .info {
         flex-direction: column;
+    }
+    .info-details {
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+    .info-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .partners {
+        text-align: left;
+        &__title {
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -98,8 +113,12 @@
     .contact-item {
         padding: 10px;
     }
+}
 
-    .partners-icons {
-        flex-direction: column;
+@media(max-width: 305px) {
+    .contact-item {
+        &__icon {
+            margin-right: 10px;
+        }
     }
 }
