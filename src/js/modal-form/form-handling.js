@@ -42,7 +42,7 @@ export default function handleForm(formSelector) {
                 setLoading(false);
                 console.log(data);
                 form.trigger('reset');
-                $('.jquery-modal').append(createSuccessMessage('Success!'));
+                form.append(createSuccessMessage('Success!'));
             })
             .catch((err) => {
                 setLoading(false);
