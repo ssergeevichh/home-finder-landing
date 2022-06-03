@@ -219,4 +219,10 @@
         flex-direction: column;
         margin: 0 auto;
     }
+
+    .success-message {
+        &--active {
+            top: -13px;
+        }
+    }
 }

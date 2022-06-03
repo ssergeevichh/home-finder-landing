@@ -27,7 +27,7 @@ export default function handleForm(formSelector) {
                 $('.success-message').remove();
             }, 500)
 
-        }, 3000);
+        }, 30000);
         return successMessage;
     }
 
