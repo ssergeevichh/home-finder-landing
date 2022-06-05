@@ -16,7 +16,7 @@ export default function handleForm(formSelector) {
 
     function createErrorMessage(message) {
         const errorMessage = $(`<div class="error-message">${message}</div>`);
-        return errorMessage;
+        formFields.append(errorMessage);
     }
 
     function createSuccessMessage(message) {
@@ -24,11 +24,12 @@ export default function handleForm(formSelector) {
         setTimeout(() => {
             successMessage.removeClass('success-message--active');
             setTimeout(() => {
-                $('.success-message').remove();
+                successMessage.remove();
             }, 500)
 
         }, 3000);
-        return successMessage;
+
+        form.append(successMessage);
     }
 
     form.on('submit', function (e) {
@@ -40,13 +41,13 @@ export default function handleForm(formSelector) {
         sendToServer(formData)
             .then((data) => {
                 setLoading(false);
-                console.log(data);
+                createSuccessMessage('Success!');
                 form.trigger('reset');
-                form.append(createSuccessMessage('Success!'));
+                console.log(data);
             })
             .catch((err) => {
                 setLoading(false);
-                formFields.append(createErrorMessage(err.message));
+                createErrorMessage(err.message);
             })
     })
 }

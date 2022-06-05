@@ -2,8 +2,8 @@ import '../styles/main.scss';
 
 import createMobileMenu from './header/m-menu';
 import outputFormData from './header/form-consoling';
-import initModal from './modal-form/init-modal';
-import handleForm from './modal-form/form-handling';
+import initModal from './callback-modal-form/init-modal';
+import handleForm from './callback-modal-form/form-handling';
 import initApartmentSlider from './slider/apartment-slider';
 
 createMobileMenu('#menu');
