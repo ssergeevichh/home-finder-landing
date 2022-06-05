@@ -104,10 +104,10 @@
     visibility: hidden;
     right: 50%;
     transform: translateX(50%);
-    top: -14px;
+    top: -24px;
     
     &--active {
-        top: 10px;
+        top: -10px;
         opacity: 1;
         visibility: visible;
         z-index: 2;
